@@ -3,12 +3,14 @@
     "content": [
       {
         "files": [
-          "**/*.md"
+          "**/*.md",
+          "**/*.yml"
         ],
         "exclude": [
           "**/obj/**",
-          "aspnet/**",
-          "**/includes/**"
+          "**/includes/**",
+          "**/aspnet-core-conceptual/**",
+          "_site/**"
         ]
       }
     ],
@@ -16,22 +18,31 @@
       {
         "files": [
           "**/*.png",
-          "**/*.jpg"
+          "**/*.jpg",
+          "**/*.gif",
+          "**/*.pdf",
+          "**/*.exe",
+          "**/*.wmv",
+          "**/*.zip"
         ],
         "exclude": [
           "**/obj/**",
-          "aspnet/**",
-          "**/includes/**"
+          "aspnet/core/**",
+          "**/includes/**",
+          "_site/**"
         ]
       }
     ],
     "overwrite": [],
     "externalReference": [],
-    "globalMetadata": {},
+    "globalMetadata": {
+      "breadcrumb_path": "/aspnet/breadcrumb/toc.json",
+      "_navPath": "/foo",
+      "_navRel": "/foo",
+      "searchScope": ["ASP.NET"]
+    },
     "fileMetadata": {},
-    "template": [
-      null
-    ],
-    "dest": "aspnet"
+    "template": [],
+    "dest": "_site"
   }
 }
